@@ -6,8 +6,11 @@ require_once('../../private/initialize.php');
 
    <div class="container-lg">
       <div class="row">
-         <div class="col-12">
-            <p class="text-center">Content</p>
+         <div class="col-12 text-center">
+            <h2>Main Menu</h2>
+            <ul>
+               <li><a href="subjects/index.php">Subjects</a></li>
+            </ul>
          </div>
       </div>
    </div>
