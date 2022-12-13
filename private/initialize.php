@@ -1,4 +1,6 @@
-<?php 
+<?php
+ob_start(); // Turns on output buffering
+
 // Use PHP constatnts to assign file paths
 // __FILE__ returnsthe current path to this file 
 // dirname() returns the path to the parent directory
