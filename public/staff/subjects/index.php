@@ -19,7 +19,7 @@ $subjects = [
             
                <h1>Subjects</h1>
                <div class="actions">
-                  <a href="" class="action">Create New Subject</a>
+                  <a href="<?= url_for('/staff/subjects/new.php'); ?>" class="action">Create New Subject</a>
                </div>
             
 
@@ -42,8 +42,8 @@ $subjects = [
                   <td><?php echo $subject['position'];?></td>
                   <td><?php echo $subject['visible'] == 1 ? 'true' : 'false'; ?></td>
                   <td><?php echo $subject['menu_name']?></td>
-                  <td><a href="<?php echo url_for('/staff/subjects/show.php?id=' . $subject['id']);?>" class="action">View</a></td>
-                  <td><a href="" class="action">Edit</a></td>
+                  <td><a href="<?php echo url_for('/staff/subjects/show.php?id=' . spCh(u($subject['id'])));?>" class="action">View</a></td>
+                  <td><a href="<?= url_for('/staff/subjects/edit.php?id=' . spCh(u($subject['id']))); ?>" class="action">Edit</a></td>
                   <td><a href="" class="action">Delete</a></td>
                </tr>
             <?php } ?>
