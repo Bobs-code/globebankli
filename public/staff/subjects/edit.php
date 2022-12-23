@@ -23,7 +23,7 @@ if (is_post_request()) {
    echo "Visible: " . $visible . "<br />";
    echo "Subect ID: " . $id . "<br />";
 } else {
-   // redirect_to(url_for('/staff/subjects/new.php'));
+   redirect_to(url_for('/staff/subjects/new.php'));
 }
 
 

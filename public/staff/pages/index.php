@@ -39,7 +39,7 @@
                <td><?php echo $page['visible'] == 1 ? 'Yes' : 'No';?></td>
                <td><?php echo spCh($page['page_name']); ?></td>
                <td><a href="<?php echo url_for('staff/pages/show.php?id=' . spCh(u($page['id']))); ?> ">View</a></td>
-               <td><a href="">Edit</a></td>
+               <td><a href="<?php echo url_for('staff/pages/edit.php?id=' . spCh(u($page['id'])));?>">Edit</a></td>
                <td><a href="">Delete</a></td>
 
             </tr>
