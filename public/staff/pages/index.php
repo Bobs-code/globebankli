@@ -15,7 +15,7 @@
 <div class="container">
    <h1 class="display-5">Pages</h1>
    <div class="actions">
-      <a href="" class="actions">Create New Page</a>
+      <a href="<?= url_for('/staff/pages/new.php'); ?>" class="actions">Create New Page</a>
    </div>
 
    <div class="table-responsive-lg">
